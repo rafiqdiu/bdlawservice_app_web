@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "684368520334",
+    "project_id": "static-entry-117408",
+    "storage_bucket": "static-entry-117408.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:684368520334:android:cf92a00242ffeb1bea15df",
+        "android_client_info": {
+          "package_name": "com.sel.bdlawservice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "684368520334-srml6mmmnkr2g3848cfkuvv8qtgsht0u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCL59x_r5Xu1Gw0Mc9WAkCzTc3nj-zLOdw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "684368520334-srml6mmmnkr2g3848cfkuvv8qtgsht0u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

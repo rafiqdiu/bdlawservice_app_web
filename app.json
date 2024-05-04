@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "BD Law Service",
+    "slug": "BDLAW-Service",
+    "owner": "rafiqse",
+    "privacy": "public",
+    "scheme": "exp", 
+    "version": "2.2.3",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    // "platforms": [
+    //   "android"
+    // ],
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "googleServicesFile": "./google-services.json",
+      "package": "com.sel.bdlawApps",
+      "userInterfaceStyle": "dark",
+      "versionCode": 223
+    },
+    "web": {
+      "name": "bdlawservice_app.com",
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "test": {
+        "message": "Welcome to bdlawservice new apps."
+      },
+      "FIRE_BASE": {},
+      "eas": {
+        "projectId": "8c391ba3-cb4d-4334-9ea6-dc4a62c5c4de"
+      }
+    },
+    "notification": {
+      "icon": "./assets/selicon.png",
+      "color": "#002C56",
+      "androidMode": "default",
+      "androidCollapsedTitle": "Notification from BDLAW Service",
+      "iosDisplayInForeground": true
+    }
+  }
+}
