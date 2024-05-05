@@ -318,9 +318,11 @@ const  _loadInitialState = async () => {
   }
 };
 const duplicateCaseCheck = async (parram) => {
-  let url= `${BASE_URL_SIDDIQUE_ADMIN}/public/api/savehdnewADcaseAddcheck?itemcart=${JSON.stringify(parram)}`; 
-   try {
-   const result = await axios.post(url).then(res => res.data);
+  let url= `${BASE_URL_SIDDIQUE_ADMIN}/public/api/savehdnewADcaseAddcheck`; 
+  let formBody= { itemcart : JSON.stringify(parram) };
+  try {
+   
+   const result = await axios.post(url, formBody).then(res => res.data); 
   return result;    
   } catch (err) {
     if (axios.isCancel(err)) {

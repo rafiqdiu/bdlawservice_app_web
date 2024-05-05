@@ -20,7 +20,7 @@ import DateTimePicker from "react-native-modal-datetime-picker";
 import NetInfo from '@react-native-community/netinfo';
 import moment from "moment";
 import HTMLView from 'react-native-htmlview';
-import {BASE_URL_SIDDIQUE,BASE_URL_BDLAW, BASE_URL_SIDDIQUE_ADMIN} from './BaseUrl';
+import {BASE_URL_SIDDIQUE,BASE_URL_BDLAW, BASE_URL_SIDDIQUE_ADMIN,BASE_URL_ASP} from './BaseUrl';
 import TopBar from './TopBar';
 import {
   responsiveWidth
@@ -81,7 +81,7 @@ export default class HighCourtDivision extends Component {
       randomNumber: 0,
       BASE_URL: BASE_URL_BDLAW,
       //BASE_URL_Asp:"https://adm.lcmsbd.com"
-      BASE_URL_Asp:"https://aspapi.bdlawservice.com"
+      BASE_URL_Asp:BASE_URL_ASP
 
     };
   }

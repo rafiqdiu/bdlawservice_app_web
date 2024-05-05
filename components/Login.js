@@ -5,7 +5,7 @@ import axios from "axios";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import NetInfo from '@react-native-community/netinfo';
 import * as Notifications from 'expo-notifications';
-import {BASE_URL_SIDDIQUE,BASE_URL_SIDDIQUE_ADMIN,BASE_URL_BDLAW} from './BaseUrl';
+import {BASE_URL_SIDDIQUE,BASE_URL_SIDDIQUE_ADMIN,BASE_URL_BDLAW,BASE_URL_ASP} from './BaseUrl';
 import SITE_BANNER_VERTICAL_IMAGE from '../assets/sel.png';
 import moment from "moment";
 import _ from 'lodash';
@@ -44,7 +44,7 @@ export default class Login extends Component{
       randomNumber: 0,
       BASE_URL: BASE_URL_BDLAW,
       //BASE_URL_Asp:"https://adm.lcmsbd.com",
-      BASE_URL_Asp:"https://aspapi.bdlawservice.com"
+      BASE_URL_Asp:BASE_URL_ASP
     }
   }
 

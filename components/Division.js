@@ -9,7 +9,7 @@ import { LogBox, Platform } from 'react-native';
 import moment from "moment";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import axios from "axios";
-import {BASE_URL_BDLAW, BASE_URL_SIDDIQUE, BASE_URL_SIDDIQUE_ADMIN} from './BaseUrl';
+import {BASE_URL_BDLAW, BASE_URL_SIDDIQUE, BASE_URL_SIDDIQUE_ADMIN,runningServer} from './BaseUrl';
 import {
   responsiveHeight,
   responsiveWidth
@@ -503,6 +503,7 @@ closeMenu   = () => {
       <View style={{ marginTop:20, marginBottom: 0 }}>
       <View style={{ marginBottom: 20 }}></View>
       <View  style={{ flexDirection:'column'}}>
+      <View  style={{ flexDirection:'row'}}>
       <TouchableOpacity   onPress={() => this.props.navigation.navigate('SearchListButton')}     
          style={styles.buttonAll}          
           ><LinearGradient 
@@ -513,9 +514,10 @@ closeMenu   = () => {
           Search List By Date 
             </Text>
             </LinearGradient>
-        </TouchableOpacity>
-     
+        </TouchableOpacity><View><Text style={styles.serverCheckText}>{runningServer} </Text></View>
+     </View>
       <View style={styles.BottomM}></View> 
+      {/* <View style={styles.BottomM1}></View>  */}
      
 
         <TouchableOpacity   onPress={() => this.props.navigation.navigate('CaseEntryButton')}    
@@ -730,6 +732,9 @@ fontWeight: 'bold',
     paddingHorizontal:0,
     color: '#071d9b',
     backgroundColor: 'transparent',
+    verticalAlign:'middle',
+    paddingVertical:'auto',
+    paddingTop:5.5
   },
   butText: {
     fontSize: 18,
@@ -740,8 +745,12 @@ fontWeight: 'bold',
     paddingHorizontal:0,
     color: '#071d9b',
     backgroundColor: 'transparent',
+    verticalAlign:'middle',
+    paddingVertical:'auto',
+    paddingTop:5.5
   },
   BottomM:{marginBottom:20},
+  BottomM1:{marginBottom:10},
   MenuButton:{
     flexDirection:'row',
     width:responsiveWidth(72),
@@ -1037,5 +1046,13 @@ fontWeight: 'bold',
     color : "#fff",
     paddingVertical: 5,
     paddingHorizontal: 25,
+  },
+  serverCheckText: {
+    color : "white",
+    textAlign:'right',
+    fontSize:18,
+    paddingTop:5,
+    paddingLeft:5
+   // marginTop:-33
   },
 });
